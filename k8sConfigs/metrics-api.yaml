@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: metrics-api-service
-          image: madhawachaminda1984/deviq-metrices-api:latest
+          image: madhawachaminda1984/deviq-metrices-api:0.0.1-SNAPSHOT
           ports:
             - containerPort: 8081
 
