@@ -24,11 +24,10 @@ jobs:
     - uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST_DNS }}
-        username: ${{secrets.HOST_DNS}}
-        key: ${{secrets.EC2_SSH_KEY}}
+        username: ${{ secrets.HOST_DNS }}
+        key: ${{ secrets.EC2_SSH_KEY }}
         scripts: |
             hostname
             pwd
-            ls -altr
       
       
