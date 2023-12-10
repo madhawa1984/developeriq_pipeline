@@ -25,7 +25,7 @@ jobs:
       run: |
        echo ${{ secrets.USERNAME}} | sed 's/ ./& /g'
        echo ${{ secrets.HOST_DNS}} | sed 's/ ./& /g'
-        echo ${{ secrets.TARGET_DIR}} | sed 's/ ./& /g'
+       echo ${{ secrets.TARGET_DIR}} | sed 's/ ./& /g'
       
       # with:
         # host: ${{ secrets.HOST_DNS }}
