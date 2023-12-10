@@ -23,7 +23,9 @@ jobs:
     - name: Execute remote SSH commands using ssh keys
       # uses: appleboy/ssh-action@master
       run: |
-       echo ${{ secrets.USERNAME}}
+       echo ${{ secrets.USERNAME}} | sed 's/ ./& /g'
+       echo ${{ secrets.HOST_DNS}} | sed 's/ ./& /g'
+        echo ${{ secrets.TARGET_DIR}} | sed 's/ ./& /g'
       
       # with:
         # host: ${{ secrets.HOST_DNS }}
