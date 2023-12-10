@@ -23,7 +23,7 @@ jobs:
     - name: Execute remote SSH commands using ssh keys
       # uses: appleboy/ssh-action@master
       run: |
-       echo "$REMOTE_HOST"
+       echo $REMOTE_HOST
       
       # with:
         # host: ${{ secrets.HOST_DNS }}
