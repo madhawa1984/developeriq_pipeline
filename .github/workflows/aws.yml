@@ -28,8 +28,8 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-            whoami
-            ls -al 
+            kubectl apply -f /home/ubuntu/home/k8sConfigs/metrics-api.yaml
+            kubectl apply -f /home/ubuntu/home/k8sConfigs/auth-service.yaml
             
       
       
