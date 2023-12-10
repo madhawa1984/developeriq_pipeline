@@ -26,9 +26,9 @@ jobs:
         host: ${{ secrets.HOST_DNS }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
-        run: |
-            pwd
-            mkdir -p /appdeploy/test
+        script: |
+            whoami
+            ls -al 
             
       
       
