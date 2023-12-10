@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: auth-service
-        image: madhawachaminda1984/deviq-auth-service:latest
+        image: madhawachaminda1984/deviq-auth-service:0.0.1-SNAPSHOT
         ports:
         - containerPort: 8081
 
