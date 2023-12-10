@@ -27,7 +27,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         scripts: |
-            cd ~/home
+            pwd
             mkdir -p /appdeploy/test
             
       
