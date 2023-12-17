@@ -32,7 +32,7 @@ spec:
       - name: auth-service
         image: madhawachaminda1984/deviq-auth-service:0.0.1-SNAPSHOT
         ports:
-        - containerPort: 8080
+          - containerPort: 8080
 
 
 
