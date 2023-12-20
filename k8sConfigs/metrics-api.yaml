@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: metrics-api-service
-          image: madhawachaminda1984/deviq-metrices-api:1.0.1
+          image: madhawachaminda1984/deviq-metrices-api:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8081
